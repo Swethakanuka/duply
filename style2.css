@@ -1,0 +1,133 @@
+<head>
+<style>
+   
+    @import url('https://fonts.googleapis.com/css2?family=Libre+Baskerville:wght@700&display=swap');
+    h3 u{
+        margin-left:85px;
+            
+        font-family: 'Libre Baskerville', serif;
+    }
+    
+     
+     .fa-brands{
+        font-size: small;
+        background-color: black;
+        height:25px;
+        color:white;
+        width:118px;
+        border-radius:5px;
+        cursor:pointer;
+        padding-left:15px;
+        padding-top: 15px;
+        margin-top: 10px;
+        transition: all 1s;
+        
+       
+     }
+     i:hover{
+              transform:scale(0.95);
+              transition: all 0.2s;
+
+            }
+     .fa-solid{
+      
+        font-size: small;
+        background-color: black;
+        height:25px;
+        color:white;
+        width:125px;
+        border-radius:5px;
+        cursor:pointer;
+        padding-left:15px;
+        padding-top: 15px;
+        margin-top: 10px;
+        margin-left: 5px;
+        transition: all 1s;
+        
+
+     }
+     body{
+   background-color: aqua;
+   transition:all 1.3s;
+     }
+       .container{
+                display:flex;
+                flex-direction:row;
+                width:340px;
+                height:560px;
+                margin-left: 500px;
+                flex-wrap:wrap;
+                font-weight:bold;
+                background-color:aqua;
+                border: 6px solid black;
+                box-shadow:2px 2px 8px black;
+                transition: all 1.3s;
+               
+                }
+                .button:hover{
+            background-color:lightsteelblue;
+            transition: scale 0.2s, background-color .5s,box-shadow .5s;
+            box-shadow:-1px -1px black;
+            transform:scale(0.95);
+
+           }
+         
+                .button {
+                 height: 70px;
+                 width : 70px;
+                 margin-top: 5px;
+                 margin-right: 5px;
+                 font-weight:bold;
+                 font-size: large;
+                 border: 3px solid black;
+                 margin-left:5px;
+                 border-radius:10px;
+                 cursor: pointer;
+                
+                 transition: all 1.3s;
+                }
+            .textfield{
+                height: 70px;
+                width: 320px;
+                margin-left:7px;
+                border :3px solid black;
+                border-radius:10px;
+                cursor: pointer;
+                box-shadow:-1px -1px black;
+                font-size: large;
+                font-weight:bold;
+                transition: all 1.3s;
+                
+            
+            }
+            .equals{
+                height: 70px;
+                 width : 155px;
+            }
+          a{
+            color:white;
+          }
+              .C{
+                
+                background-color:red ;
+                height: 70px;
+                width : 70px;
+                font-weight:bold;
+                font-size: large;
+                margin-left: 5px;
+                border :3px solid black;
+                border-radius:10px;
+                cursor: pointer;
+                box-shadow:-1px -1px black;
+                transition: all 1s;
+                
+                          }
+                          .C:hover{
+                            background-color:red;
+                             transition: scale 0.2s, background-color .5s,box-shadow .5s;
+                              box-shadow:-1px -1px black;
+                              transform:scale(0.95);
+                          }
+                          .adjust{
+                            margin-left:9px;
+                          }

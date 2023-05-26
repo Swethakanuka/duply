@@ -1,0 +1,279 @@
+<html>
+    <head>
+        <title> 
+            calculator 
+        </title>
+       
+<style>
+   
+    @import url('https://fonts.googleapis.com/css2?family=Libre+Baskerville:wght@700&display=swap');
+    h3 u{
+        margin-left:85px;
+            
+        font-family: 'Libre Baskerville', serif;
+    }
+    
+     
+     .fa-brands{
+        font-size: small;
+        background-color: black;
+        height:25px;
+        color:white;
+        width:118px;
+        border-radius:5px;
+        cursor:pointer;
+        padding-left:15px;
+        padding-top: 15px;
+        margin-top: 10px;
+        transition: all 1s;
+        
+       
+     }
+     i:hover{
+              transform:scale(0.95);
+              transition: all 0.2s;
+
+            }
+     .fa-solid{
+      
+        font-size: small;
+        background-color: black;
+        height:25px;
+        color:white;
+        width:125px;
+        border-radius:5px;
+        cursor:pointer;
+        padding-left:15px;
+        padding-top: 15px;
+        margin-top: 10px;
+        margin-left: 5px;
+        transition: all 1s;
+        
+
+     }
+     body{
+   background-color: aqua;
+   transition:all 1.3s;
+     }
+       .container{
+                display:flex;
+                flex-direction:row;
+                width:340px;
+                height:560px;
+                margin-left: 500px;
+                flex-wrap:wrap;
+                font-weight:bold;
+                background-color:aqua;
+                border: 6px solid black;
+                box-shadow:2px 2px 8px black;
+                transition: all 1.3s;
+               
+                }
+                .button:hover{
+            background-color:lightsteelblue;
+            transition: scale 0.2s, background-color .5s,box-shadow .5s;
+            box-shadow:-1px -1px black;
+            transform:scale(0.95);
+
+           }
+         
+                .button {
+                 height: 70px;
+                 width : 70px;
+                 margin-top: 5px;
+                 margin-right: 5px;
+                 font-weight:bold;
+                 font-size: large;
+                 border: 3px solid black;
+                 margin-left:5px;
+                 border-radius:10px;
+                 cursor: pointer;
+                
+                 transition: all 1.3s;
+                }
+            .textfield{
+                height: 70px;
+                width: 320px;
+                margin-left:7px;
+                border :3px solid black;
+                border-radius:10px;
+                cursor: pointer;
+                box-shadow:-1px -1px black;
+                font-size: large;
+                font-weight:bold;
+                transition: all 1.3s;
+                
+            
+            }
+            .equals{
+                height: 70px;
+                 width : 155px;
+            }
+          a{
+            color:white;
+          }
+              .C{
+                
+                background-color:red ;
+                height: 70px;
+                width : 70px;
+                font-weight:bold;
+                font-size: large;
+                margin-left: 5px;
+                border :3px solid black;
+                border-radius:10px;
+                cursor: pointer;
+                box-shadow:-1px -1px black;
+                transition: all 1s;
+                
+                          }
+                          .C:hover{
+                            background-color:red;
+                             transition: scale 0.2s, background-color .5s,box-shadow .5s;
+                              box-shadow:-1px -1px black;
+                              transform:scale(0.95);
+                          }
+                          .adjust{
+                            margin-left:9px;
+                          }
+
+            .darkcontainer{
+                background-color: black;
+                border: 6px solid white;
+                transition: all 1.3s;
+                
+                
+            }
+            
+           .darkbuttons{
+            background-color:black;
+            transition: all 1.3s;
+            border:2px solid white;
+            color:cyan;
+
+           }
+            .darkbuttons:hover{
+              background-color:darkslategrey;
+            transition: scale 0.2s, background-color .5s;
+           
+            transform:scale(0.95);
+
+
+            }
+            .darkbody{
+              background-color: black;
+              transition: all 1s;
+            }
+            .darkfa-brands{
+             border :2px solid white;
+              
+            }
+            
+            .darkfa-solid{  
+              border :2px solid white; 
+             
+              
+
+            }
+            .darkh3{
+              color:cyan;
+              transition: all 1s;
+            }
+            .darktext{
+            background-color:black;
+           color: aqua;
+           border: 2px solid white;
+            transition: all 1s;
+          
+            }
+           
+                   
+</style>
+</head>
+<body>
+
+<div class = "container" id="A">
+    <h3  id = "h3"><u>CALCULATOR</u></h3>
+    
+<form>
+    <input class = "textfield" type = "text" placeholder="RESULT" name="text" id ="result">
+
+<input class = "C"type = "reset" value = "AC" title=" All Clear">
+<button type = "button" class ="adjust button" id = "de" title="clear" onclick="text.value =text.value.toString().slice(0,-1);" >DE</button>
+<button type = "button"  id = "1" class ="button" onclick="text.value += '.'">.</button>
+<button type = "button"  id = "2" class ="button" onclick="text.value += '/'">/</button>
+    <button type = "button" id = "3" class ="button" onclick="text.value += 1">1</button>
+    <button type = "button" id = "4"  class ="button" onclick="text.value += 2">2</button>
+    <button type = "button" id = "5"  class ="button" onclick="text.value += 3">3</button>
+    <button type = "button" id = "6"  class ="button" onclick="text.value += '+'">+</button>
+    <button type = "button" id = "7" class ="button" onclick="text.value += 4">4</button>
+    <button type = "button" id = "8"  class ="button" onclick="text.value += 5">5</button>
+    <button type = "button" id = "9"  class ="button" onclick="text.value += 6">6</button>
+    <button type = "button" id = "10"  class ="button" onclick="text.value += '-'">-</button>
+    <button type = "button"  id = "11" class ="button" onclick="text.value += 7">7</button>
+    <button type = "button"  id = "12" class ="button" onclick="text.value += 8">8</button>
+    <button type = "button" id = "13"  class ="button" onclick="text.value += 9">9</button>
+    <button type = "button"  id = "14" class ="button" onclick="text.value += '*'">*</button>
+    <button type = "button"  id = "15"  class ="button" onclick="text.value += '00'">00</button>
+    <button type = "button" id = "16"  class ="button" onclick="text.value += 0">0</button>
+    <button type = "button" id = "17"  class ="button equals"  onclick="calc()">=</button>  
+    <i class="fa-solid fa-circle-half-stroke" onclick="change()" id="fas" title ="switch to dark mode">Darkmode</i>
+    <i class="fa-brands fa-linkedin"  id = "fab" title = "visit profile"> <a href="https://www.linkedin.com/in/ayush-sharma-a155a8267" > Linked in</a> </i>
+    
+    
+
+</form>  
+<script src="https://kit.fontawesome.com/c803804b72.js" crossorigin="anonymous">
+</script>
+ <script>
+    
+ function calc(){
+   
+    let c = document.getElementById('result').value;
+    document.getElementById('result').value=eval(c);
+}
+function change(){
+  let cont = document.getElementById("A");
+  cont.classList.toggle("darkcontainer");
+
+  let bo = document.body;
+  bo.classList.toggle("darkbody");
+
+ let fas =  document.getElementById("fas");
+ fas.classList.toggle("darkfa-solid");
+ if(fas.innerHTML =="Darkmode")
+ {
+  fas.innerHTML = "Lightmode";
+ }
+ else if(fas.innerHTML =="Lightmode"){
+  fas.innerHTML="Darkmode";
+
+ }
+ if(fas.title=="switch to dark mode"){
+  fas.title="switch to light mode";
+ }
+ else if(fas.title=="switch to light mode"){
+  fas.title="switch to dark mode";
+ }
+  
+
+  let fab = document.getElementById("fab");
+  fab.classList.toggle("darkfa-brands");
+
+  let h3 = document.getElementById("h3");
+  h3.classList.toggle("darkh3");
+
+  let result = document.getElementById("result")
+  result.classList.toggle("darktext");
+
+  let buttons = document.querySelectorAll(".button");
+  buttons.forEach(button => {
+  button.classList.toggle("darkbuttons");
+});
+  }
+ 
+
+ </script>
+</body>
+</html>
+  
